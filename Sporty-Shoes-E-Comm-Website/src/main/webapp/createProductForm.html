@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add a Product</title>
+</head>
+<body>
+
+	<h2>Add a Product</h2><br>
+	<form action="createProductServlet" method="post">
+		Enter Product Name : <br>
+		<input type="text" name="productName">
+		<br><br>
+		Enter Product Company : <br>
+		<input type="text" name="company">
+		<br><br>
+		Enter Product Description : <br>
+		<input type="text" name="description">
+		<br><br>
+		Enter Product Price : <br>
+		<input type="text" name="price">
+		<br><br>
+		Enter Product Category : <br>
+		<select name="category">
+			<option value="Sneakers">Sneakers</option>
+			<option value="Sports Shoes">Sports Shoes</option>
+			<option value="Loafers">Loafers</option>
+			<option value="Formal Shoes">Formal Shoes</option>
+		</select>
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
