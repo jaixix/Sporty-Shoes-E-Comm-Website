@@ -8,6 +8,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Searched Users - Result</title>
+<style>
+body {
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	margin-top: 140px !important;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
 </head>
 <body>
 	<h2>Searched Users - Results</h2>

@@ -52,7 +52,7 @@ body {
 	<div class="header">
 		<hr>
 		<h1 align="center">Sporty Shoes - Home Page</h1>
-		<h3>Welcome, </h3>
+		<h3>Welcome, <%=userName%></h3>
 		<hr>
 	</div>
 	<br>
@@ -76,6 +76,11 @@ body {
 			<td>Visit Cart</td>
 			<td>In order to visit your shopping cart and make payments.</td>
 			<td><a href="#">View Cart</a></td>
+		</tr>
+		<tr>
+			<td>Logout</td>
+			<td>In order to Logout from website.</td>
+			<td><a href="logoutFunctionality">Logout</a></td>
 		</tr>
 	</table>
 </body>

@@ -16,6 +16,9 @@ table {
 
 body {
 	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	margin-top: 140px !important;
 }
 </style>
 </head>
@@ -39,7 +42,7 @@ body {
 				<td>${product.price}</td>
 				<td>${product.description}</td>
 				<td>${product.category}</td>
-				<td><a href="addToCartServlet?id=${product.id}">Add</a></td>
+				<td><a href="addToCartServlet?productId=${product.id}">Add</a></td>
 			</tr>
 		</c:forEach>
 	</table>

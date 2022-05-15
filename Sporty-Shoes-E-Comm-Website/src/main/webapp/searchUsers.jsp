@@ -5,6 +5,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Search Users</title>
+<style>
+body {
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	margin-top: 140px !important;
+}
+</style>
 </head>
 <body>
 	<h2>Search users</h2>

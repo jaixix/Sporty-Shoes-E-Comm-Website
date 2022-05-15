@@ -13,7 +13,14 @@
 		<welcome-file>default.htm</welcome-file>
 	</welcome-file-list>
 
-
+	<servlet>
+		<servlet-name>loginFunctionality</servlet-name>
+		<servlet-class>functionalities.LoginFuntionality</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginFunctionality</servlet-name>
+		<url-pattern>/loginFuntionality</url-pattern>
+	</servlet-mapping>
 	<servlet>
 		<servlet-name>viewUsersServlet</servlet-name>
 		<servlet-class>client.ViewUsersServlet</servlet-class>
@@ -31,13 +38,4 @@
 		<servlet-name>viewProductsServlet</servlet-name>
 		<url-pattern>/viewProductsServlet</url-pattern>
 	</servlet-mapping>
-	<servlet>
-		<servlet-name>loginFunctionality</servlet-name>
-		<servlet-class>functionalities.LoginFuntionality</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>loginFunctionality</servlet-name>
-		<url-pattern>/loginFuntionality</url-pattern>
-	</servlet-mapping>
-
 </web-app>

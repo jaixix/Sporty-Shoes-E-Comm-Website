@@ -23,5 +23,6 @@
         <!--  Use annotation based mapping -->   
         <mapping class="entity.Users" />
         <mapping class="entity.Products" />
+        <mapping class="entity.Purchases" />
     </session-factory>
 </hibernate-configuration>

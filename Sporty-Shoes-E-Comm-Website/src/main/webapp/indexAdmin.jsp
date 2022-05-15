@@ -20,12 +20,39 @@ body {
 	background-size: cover;
 }
 </style>
+
+<%
+		String emailId = "default";
+		String userName = "default";
+		int userId = 0;
+		Cookie[] cookies = request.getCookies();
+		if(cookies!=null){
+			for(Cookie cookie : cookies){
+				if (cookie.getName().equals("emailId")) {
+					emailId = cookie.getValue();
+					System.out.println(emailId);
+				}
+				if (cookie.getName().equals("userName")) {
+					userName = cookie.getValue();
+					System.out.println(userName);
+				}
+				if (cookie.getName().equals("userId")) {
+					userId = Integer.parseInt(cookie.getValue());
+					System.out.println(userId);
+				}
+			}
+		}
+		if(emailId.equalsIgnoreCase("default")){
+			response.sendRedirect("loginForm.html");
+		}
+%>
+
 </head>
 <body>
 	<div class="header">
 		<hr>
 		<h1 align="center">Sporty Shoes : Back-End</h1>
-		<h3>Welcome, emailId</h3>
+		<h3>Welcome, <%=userName%></h3>
 		<h3 align="center">Action Menu</h3>
 		<hr>
 	</div>
@@ -76,6 +103,11 @@ body {
 			<td>View Users</td>
 			<td>In order to view all users from the database.</td>
 			<td><a href="viewProductsServlet">View Products</a></td>
+		</tr>
+		<tr>
+			<td>View Transactions</td>
+			<td>In order to view all transactions from the database.</td>
+			<td><a href="viewTransactionsServlet">View Transactions</a></td>
 		</tr>
 		<tr>
 			<td>Logout</td>
