@@ -7,24 +7,25 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 public class Users {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
 	private String emailId;
 	private String password;
-	private int userIsAdmin; // false for user, true for admin
+	private int userType;
 
-	public Users() {}
-	
-	public Users(String name, String emailId, String password, int isAdmin) {
+	public Users() {
+	}
+
+	public Users(String name, String emailId, String password, int userType) {
 		this.name = name;
 		this.emailId = emailId;
 		this.password = password;
-		this.setUserIsAdmin(userIsAdmin);
+		this.userType = userType;
 	}
 
 	public int getId() {
@@ -59,13 +60,18 @@ public class Users {
 		this.password = password;
 	}
 
-	public int getUserIsAdmin() {
-		return userIsAdmin;
+	public int getUserType() {
+		return userType;
 	}
 
-	public void setUserIsAdmin(int userIsAdmin) {
-		this.userIsAdmin = userIsAdmin;
+	public void setUserType(int userType) {
+		this.userType = userType;
 	}
 
-	
+//	@Override
+//	public String toString() {
+//		return "Users [id=" + id + ", name=" + name + ", emailId=" + emailId + ", password=" + password + ", userType="
+//				+ userType + "]";
+//	}
+
 }

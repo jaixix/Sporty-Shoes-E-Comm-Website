@@ -23,14 +23,14 @@ public class CreateUserServlet extends HttpServlet {
 		String userName = request.getParameter("userName");
 		String emailId = request.getParameter("emailId");
 		String password = request.getParameter("password");
-		int isAdmin = Integer.parseInt(request.getParameter("isAdmin"));
+		int userType = Integer.parseInt(request.getParameter("userType"));
 		
 		
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		
 		session.beginTransaction();
 		
-		Users user = new Users(userName, emailId, password,isAdmin);
+		Users user = new Users(userName, emailId, password, userType);
 		
 		session.saveOrUpdate(user);
 		

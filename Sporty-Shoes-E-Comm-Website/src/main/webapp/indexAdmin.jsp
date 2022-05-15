@@ -1,15 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Admin Homepage</title>
+<style>
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+}
+
+.header {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background:
+		url("https://www.xmple.com/wallpaper/blue-gradient-white-linear-1920x1080-c2-87cefa-ffffff-a-105-f-14.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+</style>
 </head>
 <body>
-	<h2>Welcome to Sporty Shoes : Back-End</h2>
-	<!-- Admin's Email -->
-	<table border='1'>
+	<div class="header">
+		<hr>
+		<h1 align="center">Sporty Shoes : Back-End</h1>
+		<h3>Welcome, emailId</h3>
+		<h3 align="center">Action Menu</h3>
+		<hr>
+	</div>
+	<br>
+	<table border='1' align="center">
 		<tr>
 			<th>Action</th>
 			<th>Description</th>
@@ -18,7 +39,7 @@
 		<tr>
 			<td>Add a User</td>
 			<td>In order to add users to the database.</td>
-			<td><a href="createUserForm.html">Add User</a></td>
+			<td><a href="createUserFormUpdated.html">Add User</a></td>
 		</tr>
 		<tr>
 			<td>Add a Product</td>
@@ -45,10 +66,21 @@
 			<td>In order to delete products from the database.</td>
 			<td><a href="deleteProduct.html">Delete Product</a></td>
 		</tr>
-			<tr>
+		<tr>
 			<td>View Users</td>
 			<td>In order to view all users from the database.</td>
 			<td><a href="viewUsersServlet">View Users</a></td>
+		</tr>
+		</tr>
+		<tr>
+			<td>View Users</td>
+			<td>In order to view all users from the database.</td>
+			<td><a href="viewProductsServlet">View Products</a></td>
+		</tr>
+		<tr>
+			<td>Logout</td>
+			<td>In order to Logout from website.</td>
+			<td><a href="logoutFunctionality">Logout</a></td>
 		</tr>
 	</table>
 </body>

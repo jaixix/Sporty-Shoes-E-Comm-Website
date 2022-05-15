@@ -24,7 +24,7 @@
 				<td>${user.name}</td>
 				<td>${user.emailId}</td>
 				<td>${user.password}</td>
-				<td>${user.userIsAdmin}</td>
+				<td>${user.userType}</td>
 			</tr>
 		</c:forEach>
 	</table>
